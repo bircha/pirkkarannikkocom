@@ -1,0 +1,12 @@
+/* Create a flex container for .teasers */
+.teasers {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.teaser {
+  flex: 1;
+  padding: 20px;
+  background-color: aqua;
+}
