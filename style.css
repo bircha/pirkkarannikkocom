@@ -1,4 +1,319 @@
-/* Create a flex container for .teasers */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #e0e0e0;
+  color: #666;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/OpenSans-Regular-webfont.eot);
+  src: url(fonts/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/OpenSans-Regular-webfont.woff) format("woff"), url(fonts/OpenSans-Regular-webfont.ttf) format("truetype"),
+      url(fonts/OpenSans-Regular-webfont.svg#svgFontName) format("svg");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/BebasNeue-webfont.eot);
+  src: url(fonts/BebasNeue-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/BebasNeue-webfont.woff) format("woff"), url(fonts/BebasNeue-webfont.ttf) format("truetype"), url(fonts/BebasNeue-webfont.svg#svgFontName) format("svg");
+}
+@font-face {
+  font-family: BraveWorld;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/braveworld.eot);
+  src: url(fonts/braveworld.eot?#iefix) format("embedded-opentype"), url(fonts/braveworld.woff) format("woff"), url(fonts/braveworld.ttf) format("truetype"), url(fonts/braveworld.svg#svgFontName) format("svg");
+}
+body {
+  font: 62.5%/1.2 "Open Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+abbr, acronym, img {
+  border: none;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+q:after, q:before {
+  content: "";
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+caption, td, th {
+  text-align: left;
+  vertical-align: top;
+}
+a:link {
+  color: #1d6fbb;
+  text-decoration: underline;
+}
+a:visited {
+  color: #666;
+  text-decoration: underline;
+}
+a:active, a:focus, a:hover {
+  color: #1d6fbb;
+  text-decoration: none;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: 400;
+}
+.teaser h3, footer, h1 span, header, nav {
+  font-family: "Bebas Neue";
+}
+h1 {
+  font-size: 1em;
+  font-family: BraveWorld;
+  font-weight: 400;
+}
+h2 {
+  color: #000;
+  font-size: 2.4em;
+  font-weight: 400;
+}
+h3 {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+h4, h5, h6, li, p, td, th {
+  font-size: 1.3em;
+}
+li li, li p {
+  font-size: 1em;
+}
+#page {
+  background: #fff;
+  margin: 0 4%;
+}
+header {
+  position: relative;
+}
+h1 em {
+  font-size: 0;
+  height: 0;
+  text-indent: -9000px;
+}
+h1 span {
+  color: #797979;
+  display: block;
+  font-size: 3.2em;
+  margin: 2em 0 0;
+  text-align: center;
+}
+html[lang="fi"] h1 span {
+  font-size: 2.3em;
+  margin: 2.8em 0 0;
+}
+
+/* Navigation */
+nav {
+  background: #949bb1;
+  position: absolute;
+  right: 0;
+  top: 1em;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0.5em 0 0;
+}
+nav li {
+  display: inline;
+  font-size: 2.4em;
+  padding: 0 0 0 0.9em;
+}
+nav li a,
+nav li em {
+  color: #b9c0d5;
+  position: relative;
+}
+nav li a:active,
+nav li a:focus,
+nav li a:hover,
+nav li a:link,
+nav li a:visited {
+  color: #b9c0d5;
+  text-decoration: none;
+}
+nav li a:active,
+nav li a:focus,
+nav li a:hover,
+nav li em {
+  color: #fff;
+}
+nav li a:active:after,
+nav li a:focus:after,
+nav li a:hover:after,
+nav li em:after {
+  border: solid transparent;
+  border-color: #fff transparent transparent;
+  border-width: 5px;
+  content: " ";
+  height: 0;
+  margin-left: -5px;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  width: 0;
+}
+
+article,
+aside {
+    line-height: 1.5;
+}
+article > h2 {
+    color: #aebb1d;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.2;
+    margin: 0 auto;
+    text-align: right;
+    width: 18em;
+}
+html[lang="fi"] article > h2 {
+    width: 18.5em;
+}
+article > h2 em {
+    display: block;
+    color: #7a7a7a;
+    padding: 0.8em 0 1em;
+}
+.teasers {
+    margin: 0 -2%;
+}
+.teaser {
+    color: #fff;
+    padding: 0 6.666666666666666%;
+}
+.design /* ux */ {
+    background: #aebb1d;
+    -webkit-transform: skewX(-2deg);
+    transform: skewX(-2deg);
+}
+.product /* web */ {
+    background: #949bb1;
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+}
+.agile /* analytics */ {
+    background: #1d6fbb;
+    -webkit-transform: skewX(-2deg);
+    transform: skewX(-2deg);
+}
+.web /* agile */ {
+    background: #676f88;
+    border-bottom: solid #797979 4px;
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+}
+.agile *,
+.design * {
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+}
+.web *,
+.product * {
+    -webkit-transform: skewX(-2deg);
+    transform: skewX(-2deg);
+}
+.teaser h3 {
+    color: #fff;
+    font-size: 2em;
+    line-height: 1;
+    padding: 0.8em 0 0.5em;
+    text-align: center;
+}
+.teaser p {
+    padding: 0 0 1.6em;
+}
+.teaser a:active,
+.teaser a:focus,
+.teaser a:hover,
+.teaser a:link,
+.teaser a:visited {
+    color: #fff;
+}
+section {
+    padding: 0 5%;
+}
+.teasers + section, aside {
+    padding: 3em 5% 0;
+}
+aside + aside {
+    padding: 1.6em 5% 3em;
+}
+aside h2,
+section h2 {
+    font-size: 1.6em;
+    line-height: 1.2;
+    padding: 0 0 1em;
+}
+aside p,
+section p {
+    padding: 0 0 1.6em;
+}
+aside ul,
+section ul {
+    padding: 0 0 2em 1.6em;
+}
+section img {
+    margin: 0 0 1.6em;
+}
+hr {
+    background: #797979;
+    border: 0;
+    clear: both;
+    height: 0.1em;
+}
+footer {
+    background: #949bb1;
+    margin: 0 -3.125%;
+    text-align: center;
+    -webkit-transform: skewX(-2deg);
+    transform: skewX(-2deg);
+}
+footer ul {
+    -webkit-transform: skewX(2deg);
+    transform: skewX(2deg);
+}
+footer li {
+    color: #b9c0d5;
+    display: inline;
+    font-size: 2.4em;
+    line-height: 1.5;
+}
+footer li:before {
+    content: "\2002-\2002";
+}
+footer li:first-child:before {
+    content: "";
+}
+footer a:link,
+footer a:visited {
+    color: #b9c0d5;
+    text-decoration: none;
+}
+footer a:active,
+footer a:focus,
+footer a:hover,
+footer em {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Create a flex container for .teasers 
 .teasers {
   display: flex;
   justify-content: center;
@@ -8,5 +323,6 @@
 .teaser {
   flex: 1;
   padding: 20px;
-  background-color: aqua;
 }
+
+*/
