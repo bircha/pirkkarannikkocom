@@ -1,0 +1,62 @@
+html {
+    background: #fff;
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/OpenSans-Regular-webfont.eot);
+    src: url(fonts/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/OpenSans-Regular-webfont.woff) format("woff"), url(fonts/OpenSans-Regular-webfont.ttf) format("truetype"),
+        url(fonts/OpenSans-Regular-webfont.svg#svgFontName) format("svg");
+}
+@font-face {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/BebasNeue-webfont.eot);
+    src: url(fonts/BebasNeue-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/BebasNeue-webfont.woff) format("woff"), url(fonts/BebasNeue-webfont.ttf) format("truetype"), url(fonts/BebasNeue-webfont.svg#svgFontName) format("svg");
+}
+@font-face {
+    font-family: BraveWorld;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/braveworld.eot);
+    src: url(fonts/braveworld.eot?#iefix) format("embedded-opentype"), url(fonts/braveworld.woff) format("woff"), url(fonts/braveworld.ttf) format("truetype"), url(fonts/braveworld.svg#svgFontName) format("svg");
+}
+body {
+    font: 62.5%/1.2 "Open Sans", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+.teaser h3, footer, h1 span, header, nav {
+    font-family: "Bebas Neue";
+}
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active, h1 a:focus{
+    color: #000;
+    text-decoration: none;
+}
+  nav, footer {
+    display: none;
+}
+h1 {
+    font-size: 2.4em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h2 span {
+    display: block;
+}
+p {
+    font-size: 1.4em;
+}
+img {
+    display: block;
+    float: right;
+    height: auto;
+    margin: 0 0 0 3%;
+    max-width: 30%;
+}

@@ -1,3 +1,4 @@
+/* Reset and general styles */
 * {
   margin: 0;
   padding: 0;
@@ -92,6 +93,8 @@ h4, h5, h6, li, p, td, th {
 li li, li p {
   font-size: 1em;
 }
+
+/* Layout */
 #page {
   background: #fff;
   margin: 80px 2.5% 0;
@@ -134,9 +137,11 @@ h1 a:active, h1 a:focus, h1 a:hover {
   text-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
 }
 h1 span {
-  font-size: 6.7em;
-  margin: -0.75em 0 0 0.5em;
-  text-align: left;
+  display: block;
+  font-size: 4.2em;
+  line-height: 1;
+  margin: -0.75em 0.5em 0 0.7em;
+  text-align: center;
 }
 html[lang="fi"] h1 span {
   font-size: 4.625em;
@@ -162,17 +167,17 @@ nav li {
   padding: 0 0.9em 0 0;
 }
 nav li a, nav li em {
-  color: #b9c0d5;
+  color: #fff;
   position: relative;
 }
 nav li em {
   text-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
 }
-nav li a:active, nav li a:focus, nav li a:hover, nav li a:link, nav li a:visited {
-  color: #b9c0d5;
+nav li a:link, nav li a:visited {
+  color: #666;
   text-decoration: none;
 }
-nav li a:active, nav li a:focus, nav li a:hover, nav li em {
+nav li a:active, nav li a:focus, nav li a:hover {
   color: #fff;
   text-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
 }
@@ -202,12 +207,15 @@ article > h2 {
     font-size: 1.4em;
     font-style: italic;
     line-height: 1.2;
-    margin: 0 auto;
-    text-align: right;
-    width: 18em;
+    margin: 0 1.5em 0 2.6em;
+    text-align: center;
 }
 html[lang="fi"] article > h2 {
-    width: 18.5em;
+  /**/
+}
+article > h2 span {
+    display: block;   
+    padding: 0.8em 0 0 0;
 }
 article > h2 em {
     display: block;
@@ -319,16 +327,12 @@ footer a:active, footer a:focus, footer a:hover, footer em {
 @media only screen and (min-width: 30em) {
   h1 span {
       font-size: 4.8em;
-      margin: 1.25em 0 0;
   }
   html[lang="fi"] h1 span {
       font-size: 3.6em;
-      margin: 1.7em 0 0;
   }
   article > h2 {
       font-size: 1.6em;
-      text-align: center;
-      width: 23.2em;
   }
   .teasers, footer {
       margin: 0 -2.304147465437788%;
@@ -353,20 +357,17 @@ footer a:active, footer a:focus, footer a:hover, footer em {
 }
 
 @media only screen and (min-width: 48em) {
+  h1 span {
+      font-size: 6.7em;
+  }
   article > h2 {
       font-size: 1.8em;
-      margin: -0.6em 0 0 11em;
-      text-align: right;
-      width: 20em;
   }
   html[lang="fi"] article > h2 {
-      font-size: 1.6em;
-      margin: -0.3em 0 0 14.75em;
-      width: 20em;
+    /**/
   }
   article > h2 em {
-      font-size: 1.1em;
-      padding: 0.2em 0 2.6em;
+    /**/
   }
   .teasers {
       display: flex;
@@ -443,11 +444,9 @@ footer a:active, footer a:focus, footer a:hover, footer em {
   }
   h1 span {
       font-size: 8.7em;
-      margin: -0.75em 0 0 0.875em;
   }
   html[lang="fi"] h1 span {
-      font-size: 6em;
-      margin: -0.75em 0 0 1.3em;
+      /**/
   }
   nav {
     top: -5.2em;
@@ -460,23 +459,19 @@ footer a:active, footer a:focus, footer a:hover, footer em {
     bottom: -13px;
   }
   article > h2 {
-      font-size: 1.8em;
-      margin: -0.6em 0 0 6em;
-      width: 36em;
+      font-size: 2.0em;
   }
   html[lang="fi"] article > h2 {
-      margin: -0.4em 0 0 6em;
-      width: 36em;
+      /**/
   }
   article > h2 em {
-      font-size: 1.4em;
-      padding: 0.2em 0 2em;
+      /**/
   }
   html[lang="fi"] article > h2 {
-      font-size: 1.8em;
+      /**/
   }
   html[lang="fi"] article > h2 em {
-      font-size: 1.2em;
+      /**/
   }
   .teasers {
       margin: 0 -1.063829787234043%;
@@ -511,12 +506,10 @@ footer a:active, footer a:focus, footer a:hover, footer em {
       margin-left: -1.2%;
       z-index: 4;
   }
-  .agile *,
-  .design * {
+  .agile *, .design * {
       transform: skewX(2deg);
   }
-  .web *,
-  .product * {
+  .web *, .product * {
       transform: skewX(-2deg);
   }
   .teaser h3 {
