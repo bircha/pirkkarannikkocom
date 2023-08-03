@@ -93,6 +93,14 @@ h4, h5, h6, li, p, td, th {
 li li, li p {
   font-size: 1em;
 }
+p em {
+  color: #000;
+  font-style: normal;
+  font-weight: 900;
+}
+p em + span {
+  display: block;
+}  
 
 /* Layout */
 #page {

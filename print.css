@@ -39,7 +39,43 @@ h1 a:link, h1 a:visited, h1 a:hover, h1 a:active, h1 a:focus{
     display: none;
 }
 h1 {
-    font-size: 2.4em;
+    font-family: BraveWorld;
+    font-weight: 400;
+}
+h1 em {
+    border-bottom-right-radius: 48px;
+    border-bottom-left-radius: 48px;
+    border-bottom: solid 3px #000;
+    display: inline-block;
+    font-size: 4em;
+    font-style: normal;
+    height: auto;
+    line-height: 1;
+    padding: 0 0.2em;
+    text-align: center;
+  }
+h1 a {
+    position: relative;
+    left: 5px;
+    top: -5px;
+}
+h1 span {
+    font-size: 2em;
+    left: 10px;
+    position: relative;
+    top: -14px;
+}
+article > h2 {
+    display: inline-block;
+    font-size: 1.4em;
+    margin: -35px 0 0 75px;
+    position: relative;
+    top: -5px;
+}
+h2 em {
+    display: block;
+    margin: 5px 0 0 0;
+    text-align: center;
 }
 h2 {
     font-size: 1.8em;
@@ -47,16 +83,27 @@ h2 {
 h3 {
     font-size: 1.8em;
 }
-h2 span {
-    display: block;
-}
 p {
     font-size: 1.4em;
+    line-height: 1.4;
+}
+p em {
+    font-style: normal;
+    font-weight: 900;
+  }
+p em + span {
+    display: block;
+  }  
+h3 + p {
+    margin-top: -10px;
+}
+a:link, a:visited {
+    color: #000;
 }
 img {
     display: block;
     float: right;
     height: auto;
-    margin: 0 0 0 3%;
-    max-width: 30%;
+    margin: 0 0 10px 10px;
+    max-width: 25%;
 }
