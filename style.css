@@ -151,10 +151,6 @@ h1 span {
   margin: -0.75em 0.5em 0 0.7em;
   text-align: center;
 }
-html[lang="fi"] h1 span {
-  font-size: 4.625em;
-  margin: -0.75em 0 0 0.75em;
-}
 
 /* Navigation */
 nav {
@@ -198,7 +194,7 @@ nav li em:after {
   border-width: 10px;
   content: " ";
   height: 0;
-  margin-left: -5px;
+  margin-left: -11px;
   pointer-events: none;
   position: absolute;
   left: 50%;
@@ -217,9 +213,6 @@ article > h2 {
     line-height: 1.2;
     margin: 0 1.5em 0 2.6em;
     text-align: center;
-}
-html[lang="fi"] article > h2 {
-  /**/
 }
 article > h2 span {
     display: block;   
@@ -336,9 +329,6 @@ footer a:active, footer a:focus, footer a:hover, footer em {
   h1 span {
       font-size: 4.8em;
   }
-  html[lang="fi"] h1 span {
-      font-size: 3.6em;
-  }
   article > h2 {
       font-size: 1.6em;
   }
@@ -370,12 +360,6 @@ footer a:active, footer a:focus, footer a:hover, footer em {
   }
   article > h2 {
       font-size: 1.8em;
-  }
-  html[lang="fi"] article > h2 {
-    /**/
-  }
-  article > h2 em {
-    /**/
   }
   .teasers {
       display: flex;
@@ -454,7 +438,7 @@ footer a:active, footer a:focus, footer a:hover, footer em {
       font-size: 8.7em;
   }
   html[lang="fi"] h1 span {
-      /**/
+      font-size: 6.9em;
   }
   nav {
     top: -5.2em;
@@ -469,23 +453,12 @@ footer a:active, footer a:focus, footer a:hover, footer em {
   article > h2 {
       font-size: 2.0em;
   }
-  html[lang="fi"] article > h2 {
-      /**/
-  }
-  article > h2 em {
-      /**/
-  }
-  html[lang="fi"] article > h2 {
-      /**/
-  }
-  html[lang="fi"] article > h2 em {
-      /**/
-  }
   .teasers {
       margin: 0 -1.063829787234043%;
       width: 102.1276595744681%;
   }
   .teaser {
+      hyphens: auto;
       position: relative;
       padding: 0 2.169197396963124%;
       flex: 0 1 20.66160520607375%;
@@ -553,6 +526,9 @@ footer a:active, footer a:focus, footer a:hover, footer em {
   #page {
       margin: auto;
       width: 112em;
+  }
+  .teaser {
+    hyphens: none;
   }
   section img {
       width: 48.96049896049896%;
